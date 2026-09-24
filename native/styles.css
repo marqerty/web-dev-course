@@ -31,13 +31,21 @@ select {
   padding-right: 12px;
 }
 
+.together select {
+  width: 100%;
+}
 .together {
   display: flex;
   gap: 10px;
 }
 
+.birthday .together {
+  margin-top: 10px;
+}
+
 .outline{
-  border: solid  2px #4800ff;
+  /* border: solid  1px #4800ff; */
+  border: none;
   border-radius: 8px;
 }
 
@@ -80,9 +88,9 @@ label a {
 }
 
 label {
-  color: black;
   width: 100%;
   font-size: 20px;
+  padding-bottom: 10px;
 }
 
 p {
@@ -97,7 +105,16 @@ footer{
   text-align: right;
 }
 
-
+h1{
+  margin: 0;
+  align-self: center;
+  padding-bottom: 10px;
+}
+.signin{
+  align-self: center;
+  margin: 0;
+  font-size: 20px;
+}
 /* СНЕЖИНКИ */
 
 /* *, *::before, *::after {
