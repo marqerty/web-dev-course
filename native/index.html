@@ -14,13 +14,15 @@
         <main class="main">
             <div class="card outline">
                 <h3>Create your own account</h3>
-                <h4 class="cardheader">Do you already have an account? <a href="/link">Sign in</a></h4>
+                <h4>Do you already have an account? <a href="/link">Sign in <img src="./arrow.svg" height="10" alt="arrow"></a></h4>
                 
                 <!-- <button>войти через ЛK ВШЭ</button>
                 <button>войти через Google</button> -->
 
-                <input type="text" placeholder="First Name"/>
-                <input type="text" placeholder="Last Name"/>
+                <div class="together">
+                    <input type="text" placeholder="First Name"/>
+                    <input type="text" placeholder="Last Name"/>
+                </div>
 
                 <select name="country">
                     <option selected disabled>Country</option>
@@ -73,7 +75,45 @@
                         <option>2021</option>
                     </select>
                 </label>
-                
+
+                <input type="email" placeholder="name@example.com"/>
+                <input type="password" placeholder="Password"/>
+                <input type="password" placeholder="Confirm Password"/>
+
+                <select name="country options">
+                    <option selected>(+1) United States</option>
+                    <option>(+44) United Kingdom</option>
+                </select>
+
+                <label>
+                    <input type="tel" placeholder="Phone Number"/>
+                    <p>Be sure to enter a phone number you can always access. 
+                    It will be used to verify your identity any time you sign 
+                    in on a new device or web browser. Messaging or data rates 
+                    may apply.
+                    </p>
+                </label>
+
+                <label>
+                    <input type="checkbox" name="ads"/>
+                    Announcement
+                    <p class="announcement">Receive Apple emails and communications including 
+                        announcements, marketing, recommendations, and updates 
+                        about Apple products, services and software.
+                    </p>
+                </label>
+
+                <label>
+                    <input type="checkbox" name="ads"/>
+                    Apps, Music, TV, and More
+                    <p class="announcement">Receive Apple emails and communications including new 
+                        releases, exclusive content, special offers, and marketing 
+                        and recommendations for apps, music, movies, TV, books, podcasts, 
+                        Apple Pay, Apple Card and more.
+                    </p>
+                </label>
+
+
 
                 <!-- <h4 class="cardheader">Войти при помощи пароля</h4>
                 <label>
@@ -90,7 +130,7 @@
                     <input type="checkbox"/>
                 </label> -->
 
-                <button class="buttonenter">Войти</button>
+                <button class="buttonenter">Continue</button>
             </div>
 
         </main>
