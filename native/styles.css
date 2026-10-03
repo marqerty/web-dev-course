@@ -1,14 +1,52 @@
+:root {
+  --text-size: 17px;
+  --color: #320bcd;
+}
+
 body {
   background-color: white;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 400px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+  padding: 16px 0;
+  color: gray;
+  font-size: var(--text-size);
+}
+
+.links {
+  color: black;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color)
+}
+
+
+
+header {
+  display: flex;
+  width: 50%;
+  min-width: 400px;
+  /* max-width: 600px; */
+  justify-content: space-between;
+  border-bottom: solid 1px gray;
+  align-items: center;
 }
 
 .main{
   min-height: 100vh;
+  width: 60%;
   display: flex;
   justify-content: center;
-    
 }
 
 .card {
@@ -16,16 +54,22 @@ body {
   background-color: white;
   display: flex;
   flex-direction: column;
-  width: 100%;
   min-width: 400px;
   max-width: 500px;
   height: fit-content;
   padding: 24px;
 }
-
+@media (max-width: 500px) {
+  .main {
+    width: 100%;
+  }
+  header {
+    width: 80%;
+  }
+}
 select {
   height: 55px;
-  font-size: 17px;
+  font-size: var(--text-size);
   border-radius: 12px;
   padding-left: 12px;
   padding-right: 12px;
@@ -60,12 +104,12 @@ input:not([type="checkbox"]) {
   border: solid 1px gray;
   width: 100%;
   height: 55px;
-  font-size: 17px;
+  font-size: var(--text-size);
   padding-left: 12px;
 }
 
 button {
-  background-color: #6049be;
+  background-color: var(--color);
   color: white;
   border: none;
   border-radius: 12px;
@@ -73,18 +117,18 @@ button {
 }
 
 .buttonenter {
-  background-color: #6049be;
+  background-color: var(--color);
   color: white;
   width: 100%;
   height: 42px;
   border-radius: 8px;
   border: none;
   align-self: center;
-  font-size: 17px;
+  font-size: var(--text-size);
 }
 
 label a {
-  color: #6049be;
+  color: var(--color);
 }
 
 label {
@@ -94,7 +138,7 @@ label {
 }
 
 p {
-  font-size: 17px;
+  font-size: var(--text-size);
 }
 
 .announcement {
