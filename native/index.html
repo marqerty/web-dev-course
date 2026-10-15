@@ -1,3 +1,5 @@
+
+
 <html>
     <head>
         <title>
@@ -5,14 +7,15 @@
         </title>
         <link rel="stylesheet" href="./styles.css" />
         <link rel="icon" href="./images/cat.svg" type="image/svg" sizes="32x32">
+        <script src="./button-click.js"></script>
     </head>
     <body>
         <header>
             <img src="./images/apple.svg" alt="Logo" width="30" height="30">
-            <nav>
-                <a href = "/" class="links">Sign in</a>
-                Sign up
-                <a href = "/" class="links">FAQ</a>
+            <nav class="navheader">
+                Sign in
+                <a href = "/" class="header-links">Sign up</a>
+                <a href = "/" class="header-links">FAQ</a>
             </nav>
             
         </header>
@@ -237,15 +240,30 @@
                         Apple Pay, Apple Card and more.
                     </p>
                 </label>
-
-                <button class="buttonenter">Continue</button>
+                <div class="together">
+                    <button onclick='onButtonContinue()' id="exitid" class="buttonenter">Continue</button>
+                <img src="./images/cat-cat-dance.gif" alt="Cat dancing" width="60" height="60">
+                </div>
             </div>
 
         </main>
         <footer>
-            Это подвал тут танцует котик
-            <img src="./images/cat-cat-dance.gif" alt="Cat dancing" width="100" height="100">
+        <div class="footer-content">
+            More ways to shop: Find an Apple Store or other retailer near you. Or call 1-800-MY-APPLE.
+            <div>
+                Copyright © 2026 Apple Inc. All rights reserved.
+                <a href = "/">Sign in</a>
+                <a href = "/">FAQ</a>
+                <a href = "/">Sign in</a>
+                <a href = "/">FAQ</a>
+                <a href = "/">Sign in</a>
+                <a href = "/">FAQ</a>
+            </div>
+        </div>
         </footer>
+
+        <script src="./input-color.js"></script>
+        
 
     </body>
 </html>

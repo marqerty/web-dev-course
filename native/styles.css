@@ -12,7 +12,33 @@ body {
   min-width: 400px;
 }
 
-nav {
+footer {
+  width: 100%;
+  height: 10%;
+  min-height: 60px;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  color: gray;
+  background-color: rgba(128, 128, 128, 0.089);
+}
+  
+.footer-content {
+  
+  min-height: 60px;
+  
+  display: flex;
+  flex-direction: column;
+
+  justify-content: space-around;
+  align-items: center;
+  color: gray;
+  
+}
+
+
+.navheader {
   display: flex;
   justify-content: space-around;
   width: 50%;
@@ -21,16 +47,18 @@ nav {
   font-size: var(--text-size);
 }
 
-.links {
+.header-links {
   color: black;
+}
+
+.header-links:hover {
+  color: var(--color)
 }
 
 a {
   text-decoration: none;
   color: var(--color)
 }
-
-
 
 header {
   display: flex;
@@ -47,6 +75,7 @@ header {
   width: 60%;
   display: flex;
   justify-content: center;
+  padding-bottom: 40px;
 }
 
 .card {
@@ -66,7 +95,14 @@ header {
   header {
     width: 80%;
   }
+  footer {
+    height: 250px;
+  }
+  .footer-content {
+    padding: 50px;
+  }
 }
+
 select {
   height: 55px;
   font-size: var(--text-size);
@@ -145,20 +181,58 @@ p {
   margin: 25px;
 }
 
-footer{
-  text-align: right;
-}
-
 h1{
   margin: 0;
   align-self: center;
   padding-bottom: 10px;
 }
+
+
+
 .signin{
   align-self: center;
   margin: 0;
   font-size: 20px;
 }
+
+
+/* подсветка */
+@property --r {
+  syntax: "<length>";
+  inherits: false;
+  initial-value: 0px;
+}
+
+input:not([type="checkbox"]),
+select {
+  --x: 0px;
+  --y: 0px;
+  --r: 0px;
+  border: 2px solid transparent;
+  background:
+    linear-gradient(white, white) padding-box,
+    radial-gradient(var(--r) circle at var(--x) var(--y), var(--color), transparent 80%) border-box,
+    #efefef border-box;
+  background-origin: border-box;
+  transition: --r 0.3s ease;
+}
+
+input:not([type="checkbox"]):hover,
+select:hover {
+  --r: 100px;
+}
+
+/* при нажатии будет такой же фиолетовой */
+
+/* input:not([type="checkbox"]):focus,
+select:focus {
+  outline: none;
+  background:
+    linear-gradient(white, white) padding-box,
+    var(--color) border-box;
+} */
+
+
 /* СНЕЖИНКИ */
 
 /* *, *::before, *::after {
